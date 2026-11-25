@@ -1,0 +1,4 @@
+Inigo,Montoya,Dog,Who am I after?,The six fingered man,0.0,1082.4,7,2
+Vizzini,Vizzini,Inconceivable!,Where does Iocane come from,Australia,1500.0,300.0,4,0
+Princess,Buttercup,LightningSand,Did I say it?,No,500.0,0.0,6,3
+Westley,ManInBlack,AsYouWish,ROUSs?,I don't think they exist,400.0,0.0,2,1

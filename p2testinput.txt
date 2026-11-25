@@ -1,0 +1,22 @@
+[Enter the data exactly as shown below, line by line]
+Inigo
+Montoya
+sword
+lance
+sword
+sword
+Who am I after?
+The six fingered man
+200.0
+bogus
+wrong
+sword
+The six fingered man
+hello
+hello
+
+[2nd run should have less input. Here are the responses]
+Australia
+Socrates
+Socrates
+

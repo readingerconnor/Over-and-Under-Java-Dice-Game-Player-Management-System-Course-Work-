@@ -1,0 +1,37 @@
+CMPINF 0401 Assignment Information Sheet
+Submit this completed form with each of your assignments. Note that all fields may
+not be relevant for all submissions.
+
+Student Name: Connor Readinger
+
+Assignment Number: 3
+
+Main Program Java File: Assig3.java
+
+Additional Java Files: PlayerGroup.java, Player2.java, Player2Test.java,
+PlayerGroupTest.java, Die.java, Admin.java
+
+Data Input Files: players.txt
+
+Data Output Files: players.txt
+
+Are there any known bugs in your code? If so, explain in detail. None
+
+Did you complete any extra credit? If so, explain in detail. Be sure to include
+precise instructions for testing the extra credit work.
+
+Yes. Admin.java is a separate administrator program with its own password,
+independent of player passwords. It allows the administrator to view all players,
+delete a player with confirmation, change a player's available cash balance,
+and save the updated player database. Changing cash does not change the player's
+debt, round history, or login credentials.
+
+Suggested demonstration: log in to Admin, choose option 1 to view players,
+choose option 3 to edit a player's cash, then choose option 4. Reopen Admin or
+run Assig3 to verify the new balance persisted. Test deletion using a backup copy
+of players.txt; also try canceling a deletion and looking up a nonexistent player.
+
+Please list any other information that would be necessary / helpful for the TA to
+execute and test your program.
+The code was developed using JDK 25. Compile the submittedThe game is run
+with java Assig3; the separate extra-credit program is run with java Admin.

@@ -1,0 +1,255 @@
+###Below is the original players.txt file. Note the contents and how the
+###individual lines are formatted. The contents below are the file that I
+###have posted and will be used to start the game.
+
+solution > cat players.txt
+Fezzik,TheGiant,Sportsmanlike,Do I have a gift for rhyme?,Some of the time,300.0,0.0,5,3
+Inigo,Montoya,Hello,Who am I after?,The six fingered man,200.0,0.0,4,2
+Vizzini,Vizzini,Inconceivable!,Where does Iocane come from,Australia,0.0,300.0,4,0
+Princess,Buttercup,LightningSand,Did I say it?,No,500.0,0.0,6,3
+Westley,ManInBlack,AsYouWish,ROUSs?,I don't think they exist,400.0,0.0,2,1
+solution > 
+
+###Now I will play the game - it is interactive so text you see below is
+###a mix of output from the program and input typed by me. I try 4
+###different players in this game, as discussed below:
+###1) Inigo Montoya is an existing player and logs in without issue. Inigo
+###   then plays 1 round of the game
+###2) Fezzik TheGiant is an existing player but fails to enter his password
+###   three times so he is prompted for the alternate authentication of
+###   answering the challenge question to reset the password. This succeeds
+###   and Fezzik resets his password and plays 1 round of the game. Note in
+###   the players.txt file at the very end of this trace that the password
+###   for Fezzik has changed.
+###3) Vizzini Vizzini is an existing player but fails to enter his password
+###   three times. He also fails when prompted for the challenge question
+###   so Vizzini Vizzini cannot log in and cannot play the game. Note that
+###   the program loops around to enter a new player at that point.
+###4) Luke Skywalker is a new player and is prompted to enter his additional
+###   information before being added to the PlayerGroup and being able to
+###   play the game. Note in the players.txt file at the very of of this
+###   trace that Luke Skywalker is now present. If I would start the game
+###   again Luke would be an existing player.
+###
+###   Note that the process of playing the game here is the same as in
+###   Assignment 2. The way the bets are handled and the borrowing is
+###   identical to Assignment 2. What is different is how the players are
+###   authenticated and maintained.
+
+solution > java Assig3
+Welcome to Over and Under
+Would you like to play the game? (y/n): y
+Please enter your first name: Inigo
+Please enter your last name: Montoya
+You are a registered player in our system!
+Please enter your password: Hello
+Welcome back Inigo Montoya
+Here is your current information: 
+	Name: Inigo Montoya
+	Money left: $200.00
+	Total Rounds Played: 4
+	Total Rounds Won: 2
+Would you like to play a round? (y/n) > y
+How much would you like to bet? (<= $200.00) > 100
+
+Select your choice: O(ver), U(nder), S(even) > O
+The dice have been rolled...and the result is...
+Die1: 5 Die2: 2 => Total: 7
+...SEVEN!...
+You have LOST this round!
+You have lost $100.00
+Here is your updated information:
+	Name: Inigo Montoya
+	Money left: $100.00
+	Total Rounds Played: 5
+	Total Rounds Won: 2
+Would you like to play another round? (y/n) > n
+
+Thank you for playing Over and Under!
+Here is your updated information: 
+	Name: Inigo Montoya
+	Money left: $100.00
+	Total Rounds Played: 5
+	Total Rounds Won: 2
+During this game you earned -$100.00
+During this game you won 0 rounds out of 1 total 
+
+Welcome to Over and Under!
+Would you like to play the game? (y/n): y
+Please enter your first name: Fezzik
+Please enter your last name: TheGiant
+You are a registered player in our system!
+Please enter your password: Rhyme
+Sorry but your password is incorrect...
+Please try again...
+Please enter your password: JogHimTooHard
+Sorry but your password is incorrect...
+Please try again...
+Please enter your password: BruteSquad
+Your password could not be authenticated.
+Would you like to try to reset your password? (y/n): y
+Do I have a gift for rhyme?
+Some of the time
+Please enter your new password: BruteSquad
+Confirm password: BruteSquad
+Here is your current information: 
+	Name: Fezzik TheGiant
+	Money left: $300.00
+	Total Rounds Played: 5
+	Total Rounds Won: 3
+Would you like to play a round? (y/n) > y
+How much would you like to bet? (<= $300.00) > 100.0
+
+Select your choice: O(ver), U(nder), S(even) > O
+The dice have been rolled...and the result is...
+Die1: 4 Die2: 2 => Total: 6
+...UNDER!...
+You have LOST this round!
+You have lost $100.00
+Here is your updated information:
+	Name: Fezzik TheGiant
+	Money left: $200.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3
+Would you like to play another round? (y/n) > n
+
+Thank you for playing Over and Under!
+Here is your updated information: 
+	Name: Fezzik TheGiant
+	Money left: $200.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3
+During this game you earned -$100.00
+During this game you won 0 rounds out of 1 total 
+
+Welcome to Over and Under!
+Would you like to play the game? (y/n): y
+Please enter your first name: Vizzini
+Please enter your last name: Vizzini
+You are a registered player in our system!
+Please enter your password: Socrates
+Sorry but your password is incorrect...
+Please try again...
+Please enter your password: Iocane
+Sorry but your password is incorrect...
+Please try again...
+Please enter your password: ImJustGettingStarted
+Your password could not be authenticated.
+Would you like to try to reset your password? (y/n): y
+Where does Iocane come from
+Pluto
+Sorry but we were unable to log you in.
+Please try to play as a new player
+No Player! Please try again.
+
+Welcome to Over and Under!
+Would you like to play the game? (y/n): y
+Please enter your first name: Luke
+Please enter your last name: Skywalker
+Welcome new player Luke Skywalker
+Please enter your information below:
+Password: JediMaster
+Confirm Password: JediKnight
+Passwords do not match - please try again.
+
+Password: JediMaster
+Confirm Password: JediMaster
+Challenge question: Who is my father?
+Challenge answer: Darth Vader
+Initial money: 400.0
+Here is your current information: 
+	Name: Luke Skywalker
+	Money left: $400.00
+	Total Rounds Played: 0
+	Total Rounds Won: 0
+Would you like to play a round? (y/n) > y
+How much would you like to bet? (<= $400.00) > 100.0
+
+Select your choice: O(ver), U(nder), S(even) > O
+The dice have been rolled...and the result is...
+Die1: 5 Die2: 1 => Total: 6
+...UNDER!...
+You have LOST this round!
+You have lost $100.00
+Here is your updated information:
+	Name: Luke Skywalker
+	Money left: $300.00
+	Total Rounds Played: 1
+	Total Rounds Won: 0
+Would you like to play another round? (y/n) > y
+How much would you like to bet? (<= $300.00) > 150.0
+
+Select your choice: O(ver), U(nder), S(even) > O
+The dice have been rolled...and the result is...
+Die1: 1 Die2: 1 => Total: 2
+...UNDER!...
+You have LOST this round!
+You have lost $150.00
+Here is your updated information:
+	Name: Luke Skywalker
+	Money left: $150.00
+	Total Rounds Played: 2
+	Total Rounds Won: 0
+Would you like to play another round? (y/n) > y
+How much would you like to bet? (<= $150.00) > 125.0
+
+Select your choice: O(ver), U(nder), S(even) > O
+The dice have been rolled...and the result is...
+Die1: 2 Die2: 5 => Total: 7
+...SEVEN!...
+You have LOST this round!
+You have lost $125.00
+Here is your updated information:
+	Name: Luke Skywalker
+	Money left: $25.00
+	Total Rounds Played: 3
+	Total Rounds Won: 0
+Would you like to play another round? (y/n) > y
+How much would you like to bet? (<= $25.00) > 200.0
+
+Note that you have bet more money than you have and will
+need to borrow in order to make this bet.  We charge 10%
+interest per round. Would you like to make this bet? (y/n) > y
+
+Select your choice: O(ver), U(nder), S(even) > O
+The dice have been rolled...and the result is...
+Die1: 2 Die2: 6 => Total: 8
+...OVER!...
+You have WON this round!
+You have won $200.00
+Here is your updated information:
+	Name: Luke Skywalker
+	Money left: $225.00
+	Total Rounds Played: 4
+	Total Rounds Won: 1
+Would you like to play another round? (y/n) > n
+
+Thank you for playing Over and Under!
+Here is your updated information: 
+	Name: Luke Skywalker
+	Money left: $225.00
+	Total Rounds Played: 4
+	Total Rounds Won: 1
+During this game you earned -$175.00
+During this game you won 1 rounds out of 4 total 
+
+Welcome to Over and Under!
+Would you like to play the game? (y/n): n
+
+No more Players -- Good-bye!
+solution > 
+
+###Below is the updated players.txt file. Note that contents and how they
+###have changed after the execution of the Assig3 program. Note in particular
+###the updates to the players' stats, the new password for Fezzik and the
+###addition of Luke Skywalker.
+
+solution > cat players.txt
+Fezzik,TheGiant,BruteSquad,Do I have a gift for rhyme?,Some of the time,200.0,0.0,6,3
+Inigo,Montoya,Hello,Who am I after?,The six fingered man,100.0,0.0,5,2
+Vizzini,Vizzini,Inconceivable!,Where does Iocane come from,Australia,0.0,300.0,4,0
+Princess,Buttercup,LightningSand,Did I say it?,No,500.0,0.0,6,3
+Westley,ManInBlack,AsYouWish,ROUSs?,I don't think they exist,400.0,0.0,2,1
+Luke,Skywalker,JediMaster,Who is my father?,Darth Vader,225.0,0.0,4,1
+solution > 
+

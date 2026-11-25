@@ -1,0 +1,21 @@
+[1st run will have many lines of input. Enter the data]
+[exactly as shown below, line by line]
+IHeartCMPINF401
+IHeartCMPINF401
+What is my show?
+The Simpsons
+250.0
+Junior
+Junior
+What am I searching for?
+The Grail
+400.0
+The six fingered man
+Prepare
+Prepare
+Floren
+
+[2nd run should have less input. Here are the responses]
+Australia
+Socrates
+Socrates

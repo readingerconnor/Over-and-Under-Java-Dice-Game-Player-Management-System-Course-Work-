@@ -1,0 +1,382 @@
+[Note this file shows 2 interactive executions of PlayerGroupTest.java]
+[The prompt on my computer is "solution > "]
+[I am starting with the file players.txt as shown below. This file is]
+[also provided for you on Canvas.]
+[The input that I used for these runs is provided in the file:]
+[pgtestinput.txt]
+[Look at that file and enter the data one line at a time when prompted.]
+[Your output should match that shown in this file.]
+[I will put square brackets around anything in this file that is not actually]
+[part of the execution - but rather explanation]
+
+[This is the initial data in the players.txt file]
+solution > cat players.txt
+Fezzik,TheGiant,Sportsmanlike,Do I have a gift for rhyme?,Some of the time,300.0,0.0,5,3
+Inigo,Montoya,Hello,Who am I after?,The six fingered man,200.0,0.0,4,2
+Vizzini,Vizzini,Inconceivable!,Where does Iocane come from,Australia,0.0,300.0,4,0
+Princess,Buttercup,LightningSand,Did I say it?,No,500.0,0.0,6,3
+Westley,ManInBlack,AsYouWish,ROUSs?,I don't think they exist,400.0,0.0,2,1
+solution > 
+solution >
+solution > java PlayerGroupTest
+Testing PlayerGroup and Player2 classes
+Here are the player stats: 
+Total Players: 5
+	Name: Fezzik TheGiant
+	Money left: $300.00
+	Total Rounds Played: 5
+	Total Rounds Won: 3
+
+	Name: Inigo Montoya
+	Money left: $200.00
+	Total Rounds Played: 4
+	Total Rounds Won: 2
+
+	Name: Vizzini Vizzini
+	Money left: $0.00
+	Money owed: $300.00
+	Total Rounds Played: 4
+	Total Rounds Won: 0
+
+	Name: Princess Buttercup
+	Money left: $500.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3
+
+	Name: Westley ManInBlack
+	Money left: $400.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+
+Current list size is: 5
+Current array capacity is: 6
+
+Checking for names in the PlayerGroup
+Marge Simpson is not in the group -- will be added:
+Welcome new player Marge Simpson
+Please enter your information below:
+Password: IHeartCMPINF401
+Confirm Password: IHeartCMPINF401
+Challenge question: What is my show?
+Challenge answer: The Simpsons
+Initial money: 250.0
+	New player info: 
+	Name: Marge Simpson
+	Money left: $250.00
+	Total Rounds Played: 0
+	Total Rounds Won: 0
+has been added to the PlayerGroup
+
+Fezzik TheGiant is a name in the PlayerGroup
+
+Indiana Jones is not in the group -- will be added:
+Welcome new player Indiana Jones
+Please enter your information below:
+Password: Junior
+Confirm Password: Junior
+Challenge question: What am I searching for?
+Challenge answer: The grail
+Initial money: 400.0
+	New player info: 
+	Name: Indiana Jones
+	Money left: $400.00
+	Total Rounds Played: 0
+	Total Rounds Won: 0
+has been added to the PlayerGroup
+
+Inigo Montoya is a name in the PlayerGroup
+
+Vizzini Vizzini is a name in the PlayerGroup
+
+Checking for valid Player2s in the PlayerGroup
+	Name: Marge Simpson
+	Money left: $250.00
+	Total Rounds Played: 0
+	Total Rounds Won: 0 has logged in and can play!
+		Simulating a win and a loss for Marge Simpson
+
+	Name: Marge Simpson
+	Money left: $400.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+	Name: Fezzik TheGiant
+	Money left: $300.00
+	Total Rounds Played: 5
+	Total Rounds Won: 3 has logged in and can play!
+		Simulating a win and a loss for Fezzik TheGiant
+
+	Name: Fezzik TheGiant
+	Money left: $450.00
+	Total Rounds Played: 7
+	Total Rounds Won: 4
+
+	Name: Indiana Jones
+	Money left: $400.00
+	Total Rounds Played: 0
+	Total Rounds Won: 0 has logged in and can play!
+		Simulating a win and a loss for Indiana Jones
+
+	Name: Indiana Jones
+	Money left: $550.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+Who am I after?
+The six fingered man
+Please enter your new password: Prepare
+Confirm password: Prepare
+	Name: Inigo Montoya
+	Money left: $200.00
+	Total Rounds Played: 4
+	Total Rounds Won: 2 has logged in and can play!
+		Simulating a win and a loss for Inigo Montoya
+
+	Name: Inigo Montoya
+	Money left: $350.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3
+
+Where does Iocane come from
+Floren
+Vizzini Vizzini could not log in...
+
+Here are the updated player stats: 
+Total Players: 7
+	Name: Fezzik TheGiant
+	Money left: $450.00
+	Total Rounds Played: 7
+	Total Rounds Won: 4
+
+	Name: Inigo Montoya
+	Money left: $350.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3
+
+	Name: Vizzini Vizzini
+	Money left: $0.00
+	Money owed: $300.00
+	Total Rounds Played: 4
+	Total Rounds Won: 0
+
+	Name: Princess Buttercup
+	Money left: $500.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3
+
+	Name: Westley ManInBlack
+	Money left: $400.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+	Name: Marge Simpson
+	Money left: $400.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+	Name: Indiana Jones
+	Money left: $550.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+
+Current list size is: 7
+Current array capacity is: 12
+solution > 
+
+[The first execution has completed. I now show the contents of players.txt.]
+[Note the difference here from the original file. Some new players have been]
+[added and some data in the players has been updated due to the execution of]
+[the program]
+
+solution > 
+solution > cat players.txt
+Fezzik,TheGiant,Sportsmanlike,Do I have a gift for rhyme?,Some of the time,450.0,0.0,7,4
+Inigo,Montoya,Prepare,Who am I after?,The six fingered man,350.0,0.0,6,3
+Vizzini,Vizzini,Inconceivable!,Where does Iocane come from,Australia,0.0,300.0,4,0
+Princess,Buttercup,LightningSand,Did I say it?,No,500.0,0.0,6,3
+Westley,ManInBlack,AsYouWish,ROUSs?,I don't think they exist,400.0,0.0,2,1
+Marge,Simpson,IHeartCMPINF401,What is my show?,The Simpsons,400.0,0.0,2,1
+Indiana,Jones,Junior,What am I searching for?,The grail,550.0,0.0,2,1
+solution > 
+
+[I am about to run the program the second time using the updated players.txt]
+[file to inialized the PlayerGroup. Note the contents of the PlayerGroup]
+[Note also that Marge and Indiana are no longer new players since they were]
+[added in the first run]
+
+solution > 
+solution > java PlayerGroupTest
+Testing PlayerGroup and Player2 classes
+Here are the player stats: 
+Total Players: 7
+	Name: Fezzik TheGiant
+	Money left: $450.00
+	Total Rounds Played: 7
+	Total Rounds Won: 4
+
+	Name: Inigo Montoya
+	Money left: $350.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3
+
+	Name: Vizzini Vizzini
+	Money left: $0.00
+	Money owed: $300.00
+	Total Rounds Played: 4
+	Total Rounds Won: 0
+
+	Name: Princess Buttercup
+	Money left: $500.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3
+
+	Name: Westley ManInBlack
+	Money left: $400.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+	Name: Marge Simpson
+	Money left: $400.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+	Name: Indiana Jones
+	Money left: $550.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+
+Current list size is: 7
+Current array capacity is: 12
+
+Checking for names in the PlayerGroup
+Marge Simpson is a name in the PlayerGroup
+
+Fezzik TheGiant is a name in the PlayerGroup
+
+Indiana Jones is a name in the PlayerGroup
+
+Inigo Montoya is a name in the PlayerGroup
+
+Vizzini Vizzini is a name in the PlayerGroup
+
+Checking for valid Player2s in the PlayerGroup
+	Name: Marge Simpson
+	Money left: $400.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1 has logged in and can play!
+		Simulating a win and a loss for Marge Simpson
+
+	Name: Marge Simpson
+	Money left: $550.00
+	Total Rounds Played: 4
+	Total Rounds Won: 2
+
+	Name: Fezzik TheGiant
+	Money left: $450.00
+	Total Rounds Played: 7
+	Total Rounds Won: 4 has logged in and can play!
+		Simulating a win and a loss for Fezzik TheGiant
+
+	Name: Fezzik TheGiant
+	Money left: $600.00
+	Total Rounds Played: 9
+	Total Rounds Won: 5
+
+	Name: Indiana Jones
+	Money left: $550.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1 has logged in and can play!
+		Simulating a win and a loss for Indiana Jones
+
+	Name: Indiana Jones
+	Money left: $700.00
+	Total Rounds Played: 4
+	Total Rounds Won: 2
+
+	Name: Inigo Montoya
+	Money left: $350.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3 has logged in and can play!
+		Simulating a win and a loss for Inigo Montoya
+
+	Name: Inigo Montoya
+	Money left: $500.00
+	Total Rounds Played: 8
+	Total Rounds Won: 4
+
+Where does Iocane come from
+Australia
+Please enter your new password: Socrates
+Confirm password: Socrates
+	Name: Vizzini Vizzini
+	Money left: $0.00
+	Money owed: $300.00
+	Total Rounds Played: 4
+	Total Rounds Won: 0 has logged in and can play!
+		Simulating a win and a loss for Vizzini Vizzini
+
+	Name: Vizzini Vizzini
+	Money left: $0.00
+	Money owed: $176.00
+	Total Rounds Played: 6
+	Total Rounds Won: 1
+
+Here are the updated player stats: 
+Total Players: 7
+	Name: Fezzik TheGiant
+	Money left: $600.00
+	Total Rounds Played: 9
+	Total Rounds Won: 5
+
+	Name: Inigo Montoya
+	Money left: $500.00
+	Total Rounds Played: 8
+	Total Rounds Won: 4
+
+	Name: Vizzini Vizzini
+	Money left: $0.00
+	Money owed: $176.00
+	Total Rounds Played: 6
+	Total Rounds Won: 1
+
+	Name: Princess Buttercup
+	Money left: $500.00
+	Total Rounds Played: 6
+	Total Rounds Won: 3
+
+	Name: Westley ManInBlack
+	Money left: $400.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+
+	Name: Marge Simpson
+	Money left: $550.00
+	Total Rounds Played: 4
+	Total Rounds Won: 2
+
+	Name: Indiana Jones
+	Money left: $700.00
+	Total Rounds Played: 4
+	Total Rounds Won: 2
+
+
+Current list size is: 7
+Current array capacity is: 12
+solution > 
+
+[Note again the updated players.txt file.]
+
+solution > 
+solution > cat players.txt
+Fezzik,TheGiant,Sportsmanlike,Do I have a gift for rhyme?,Some of the time,600.0,0.0,9,5
+Inigo,Montoya,Prepare,Who am I after?,The six fingered man,500.0,0.0,8,4
+Vizzini,Vizzini,Socrates,Where does Iocane come from,Australia,0.0,176.0,6,1
+Princess,Buttercup,LightningSand,Did I say it?,No,500.0,0.0,6,3
+Westley,ManInBlack,AsYouWish,ROUSs?,I don't think they exist,400.0,0.0,2,1
+Marge,Simpson,IHeartCMPINF401,What is my show?,The Simpsons,550.0,0.0,4,2
+Indiana,Jones,Junior,What am I searching for?,The grail,700.0,0.0,4,2
+solution > 
+

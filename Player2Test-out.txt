@@ -1,0 +1,64 @@
+[Note: The output shown in this file is a result of running the]
+[Player2Test.java program with the input entered line by line as]
+[it appears in the file p2testinput.txt. Look at that file and]
+[enter the data line by line when prompted and your output should]
+[match that shown below]
+
+solution > java Player2Test
+What is your first name? Inigo
+What is your last name? Montoya
+Welcome new player Inigo Montoya
+Please enter your information below:
+Password: sword
+Confirm Password: lance
+Passwords do not match - please try again.
+
+Password: sword
+Confirm Password: sword
+Challenge question: Who am I after?
+Challenge answer: The six fingered man
+Initial money: 200.0
+Here is a formatted output String:
+	Name: Inigo Montoya
+	Money left: $200.00
+	Total Rounds Played: 0
+	Total Rounds Won: 0
+Here is a comma separated String:
+Inigo,Montoya,sword,Who am I after?,The six fingered man,200.0,0.0,0,0
+
+Player Inigo Montoya is betting 200.0 and won with even odds
+	Name: Inigo Montoya
+	Money left: $400.00
+	Total Rounds Played: 1
+	Total Rounds Won: 1
+Player Inigo Montoya is betting 200.0 and lost with even odds
+	Name: Inigo Montoya
+	Money left: $200.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+Here is a comma separated String:
+Inigo,Montoya,sword,Who am I after?,The six fingered man,200.0,0.0,2,1
+
+Demonstrating authenticate...
+Enter the password: bogus
+Your password does not match!
+Enter the password: wrong
+Your password does not match!
+Enter the password: sword
+You have been authenticated!
+
+Now testing the forgotPassword() method...
+Who am I after?
+The six fingered man
+Please enter your new password: hello
+Confirm password: hello
+The password for Inigo Montoya has been updated
+Here is the updated data...
+Inigo,Montoya,hello,Who am I after?,The six fingered man,200.0,0.0,2,1
+Here is the new Player2 object: 
+	Name: Inigo Montoya
+	Money left: $200.00
+	Total Rounds Played: 2
+	Total Rounds Won: 1
+solution > 
+
